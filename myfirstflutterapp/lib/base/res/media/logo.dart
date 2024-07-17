@@ -7,21 +7,30 @@ class Logo extends StatelessWidget {
   double logoWidth;
   String logoTxt;
   double logoTxt_fontSize;
+  String logoColor;
 
   Logo(
       {super.key,
       this.logoAlign = MainAxisAlignment.start,
       this.logoTxt = 'standout',
       this.logoWidth = 30,
-      this.logoTxt_fontSize = 24});
+      this.logoTxt_fontSize = 24,
+      this.logoColor = "main"});
 
   @override
   Widget build(BuildContext context) {
+    switch (logoColor) {
+      case "main":
+        logoColor = AppMdedia.logo_main;
+      case "white":
+        logoColor = AppMdedia.logo_white;
+    }
+
     return Row(
       mainAxisAlignment: logoAlign,
       children: [
         Image.asset(
-          AppMdedia.logo,
+          logoColor,
           width: logoWidth,
         ),
         Text(
