@@ -27,6 +27,29 @@ class DrawerSlide extends StatelessWidget {
         ListTile(
           title: Text("Third"),
           onTap: () => Navigator.pop(context),
+        ),
+        Padding(
+          padding: EdgeInsets.all(AppStyles.padding_sm),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextButton(
+                  onPressed: () {
+                    print("TextButton clicked");
+                  },
+                  child: Text("FirstLink")),
+              TextButton(
+                  onPressed: () {
+                    print("TextButton clicked");
+                  },
+                  child: Text("SecondLink")),
+              TextButton(
+                  onPressed: () {
+                    print("TextButton clicked");
+                  },
+                  child: Text("ThirdLink")),
+            ],
+          ),
         )
       ],
     ));

@@ -9,7 +9,8 @@ class AppStyles {
   static Color bgColor = Color(0xFFE7E7E7);
   static Color borderColor = Colors.black12;
 
-  static double padding_mid = 16;
+  static double padding_sm = 6;
+  static double padding_md = 16;
 
   static TextStyle title = TextStyle(fontSize: 21, color: txtColor);
   static TextStyle title_sub = TextStyle(fontSize: 18, color: txtColor);
