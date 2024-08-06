@@ -82,21 +82,21 @@ class Footer extends StatelessWidget {
                   ]),
             ),
           ),
-          SizedBox(
-            height: 30,
-          ),
-          Column(
-            children: [
-              Logo(
-                logoWidth: 15,
-                logoTxt_fontSize: 15,
-                logoAlign: MainAxisAlignment.center,
-              ),
-              Text(
-                "ⓒ standout Limited",
-                style: AppStyles.txt_md.copyWith(color: AppStyles.txtColor),
-              ),
-            ],
+          Padding(
+            padding: EdgeInsets.all(AppStyles.padding_md),
+            child: Column(
+              children: [
+                Logo(
+                  logoWidth: 15,
+                  logoTxt_fontSize: 15,
+                  logoAlign: MainAxisAlignment.center,
+                ),
+                Text(
+                  "ⓒ standout Limited",
+                  style: AppStyles.txt_md.copyWith(color: AppStyles.txtColor),
+                ),
+              ],
+            ),
           ),
         ],
       ),

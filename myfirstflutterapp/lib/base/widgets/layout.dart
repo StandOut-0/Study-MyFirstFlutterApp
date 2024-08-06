@@ -23,6 +23,7 @@ class Layout extends StatelessWidget {
         SizedBox(height: 50),
         Body(),
         SizedBox(height: 50),
+        Spacer(),
         Footer(),
       ]),
     );
