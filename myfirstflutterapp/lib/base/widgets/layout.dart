@@ -19,6 +19,5 @@ class Layout extends StatelessWidget {
         Footer(),
       ]),
     );
-    ;
   }
 }
