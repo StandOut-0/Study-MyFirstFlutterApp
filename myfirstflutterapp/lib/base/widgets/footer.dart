@@ -64,6 +64,8 @@ class Footer extends StatelessWidget {
                   dividerColor: Colors.transparent), // 펼쳐졌을때 border없애기
               child: ExpansionTile(
                   expandedAlignment: Alignment.topLeft,
+                  childrenPadding:
+                      EdgeInsets.only(bottom: AppStyles.padding_md),
                   tilePadding: EdgeInsets.all(0),
                   title: Text(
                     "standout이 처음으로 만든 \nMyFirstFlutterApp에 방문하신 것을 진심으로 환영합니다!",

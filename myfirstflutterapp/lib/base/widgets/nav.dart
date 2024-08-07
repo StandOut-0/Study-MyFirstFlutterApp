@@ -6,6 +6,11 @@ class Nav extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text("Nav", style: AppStyles.title);
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(10, 70, 10, 10),
+        child: Text("<Nav>", style: AppStyles.title),
+      ),
+    );
   }
 }

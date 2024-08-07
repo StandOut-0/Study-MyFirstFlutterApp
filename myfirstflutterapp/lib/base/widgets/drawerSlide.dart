@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+
 import 'package:myfirstflutterapp/base/res/media/logo.dart';
 import 'package:myfirstflutterapp/base/res/style/appStyle.dart';
 
@@ -37,17 +39,21 @@ class DrawerSlide extends StatelessWidget {
                   onPressed: () {
                     print("TextButton clicked");
                   },
-                  child: Text("FirstLink")),
-              TextButton(
-                  onPressed: () {
-                    print("TextButton clicked");
-                  },
                   child: Text("SecondLink")),
               TextButton(
                   onPressed: () {
                     print("TextButton clicked");
                   },
                   child: Text("ThirdLink")),
+              TextButton(
+                  onPressed: () {
+                    print("TextButton clicked");
+                    Fluttertoast.showToast(
+                      msg: "고객센터: 02-0000-0000",
+                      toastLength: Toast.LENGTH_LONG,
+                    );
+                  },
+                  child: Text("고객센터")),
             ],
           ),
         )

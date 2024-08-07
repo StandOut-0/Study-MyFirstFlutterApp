@@ -12,6 +12,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  fluttertoast: ^8.0.9
   # flutter_icons: ^1.0.0
 
 # dev_dependencies

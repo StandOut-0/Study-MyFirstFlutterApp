@@ -6,6 +6,10 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text("Body", style: AppStyles.title);
+    return Column(
+      children: [
+        Center(child: Text("<Body>", style: AppStyles.title)),
+      ],
+    );
   }
 }
