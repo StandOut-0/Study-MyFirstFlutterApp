@@ -20,7 +20,7 @@ class DrawerSlide extends StatelessWidget {
             child: Logo(logoAlign: MainAxisAlignment.start)),
         ListTile(
           title: Text("First"),
-          onTap: () => Navigator.pop(context),
+          onTap: () => Navigator.pushNamed(context, '/first'),
         ),
         ListTile(
           title: Text("Second"),

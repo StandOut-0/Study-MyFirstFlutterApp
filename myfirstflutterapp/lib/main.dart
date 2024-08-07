@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myfirstflutterapp/base/res/style/appStyle.dart';
+import 'package:myfirstflutterapp/base/widgets/body.dart';
 import 'package:myfirstflutterapp/base/widgets/layout.dart';
 
 void main() => runApp(MyFirstFlutterApp());
@@ -22,6 +23,7 @@ class MyFirstFlutterApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => Layout(),
+          '/first': (context) => Layout(pageName: Body()),
         });
   }
 }
